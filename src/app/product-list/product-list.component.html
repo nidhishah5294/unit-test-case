@@ -1,0 +1,12 @@
+<h2>Product List</h2>
+<p>Type somhting to search</p>
+<input class="form-control" id='myInput' type='text' [(ngModel)]='searchText' placeholder="search..">
+<button class="btn btn-primary float-right" id='searchButton' (click)="filterProductList()"></button>
+<br />
+<br />
+<ul class="list-group">
+    <li *ngFor='let product of teamProductList;let i =index' id="{{'product_'+i}}" class='list-group-item'>
+        <span class="badge">{{product.title}}  aaaaa</span>
+    </li>
+</ul>
+

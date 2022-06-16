@@ -1,0 +1,24 @@
+<p>user-detail works!</p>
+
+<div>
+    user-detail
+</div>
+<div>
+    <div id="userid">id - {{userid}}</div>
+</div>
+<div>
+    <div>
+        <label for="name">Name</label>
+        <input class="f-c" id="username" type="text" name="username" [(ngModel)]="username">
+
+    </div>
+
+    <div>
+        <label for="age">Age</label>
+        <input class="f-c" id="username" type="text" name="age" [(ngModel)]="age">
+
+    </div>
+    <div>
+        <button (click)="saveUser()">Save User</button>
+    </div>
+</div>

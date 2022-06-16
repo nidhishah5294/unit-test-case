@@ -1,0 +1,11 @@
+<div>
+    <input type="text" class="form-control" [(ngModel)]="username" />
+    <button class="btn">click me</button>
+</div>
+<div>
+    <br />
+    <div *ngIf="isClicked" id="customDiv" HelloDirective></div>
+    <!-- [userinfo]="username" -->
+
+    <div> {{ 'hello' | enclose:'curly'}}</div>
+</div>

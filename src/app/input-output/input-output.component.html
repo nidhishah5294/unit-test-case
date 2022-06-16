@@ -1,0 +1,11 @@
+<p>input-output works!</p>
+<ul>
+    <li *ngFor="let user of userInfo;let i=index" id="{{'user_'+i}}" (click)="passUser(user)">{{user.name}} {{user.age}}</li>
+</ul>
+<div>
+<user-detail [selUser]="selectedUser" (updateUser)="updateUserArr($event)"></user-detail>
+</div>
+
+{{outputVal?.id}}
+{{outputVal?.name}}
+{{outputVal?.age}}

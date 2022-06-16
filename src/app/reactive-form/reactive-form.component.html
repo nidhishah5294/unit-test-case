@@ -1,0 +1,17 @@
+<p>Login</p>
+
+<form id="loginForm" [formGroup]="loginForm">
+    <div>
+        Email Id:<input type="email" name="email" id="useremail" formControlName='useremail' />
+        <div *ngIf="loginForm.controls.useremail.invalid && loginForm.controls.useremail.pristine">invalide mail </div>
+    </div>
+    <div>
+        Password : <input type="password" name="password" id='userpassword' formControlName='userpassword' />
+    </div>
+    <div>
+        <button [disabled]="loginForm.invalid" type="submit" (click)="submitLoginForm()">
+            Save
+        </button>
+    </div>
+    <div *ngIf="message" id="success-message" >{{message}}</div>
+</form>

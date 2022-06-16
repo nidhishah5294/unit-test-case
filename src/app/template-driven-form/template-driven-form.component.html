@@ -1,0 +1,21 @@
+<p>template-driven-form Means everything within template</p>
+
+<form #forgotForm="ngForm" action="">
+    <div>
+        password reset
+    </div>
+    <div>
+        <span id="success-msg" *ngIf="message!=''">{{message}}</span>
+    </div>
+    <div>
+        <label>Enter email id:</label>
+        <!-- //name define if use ngModel -->
+        <input type="email" required email [(ngModel)]="useremail" name='mail' type="text">
+        <br />
+        <span
+            *ngIf="forgotForm.form.controls.useremail.invalid && forgotForm.form.controls.useremail?.errors?.email"></span>
+    </div>
+    <div>
+        <button (click)="submitForm()" [disabled]="forgotForm.invalid" id="submitButton"> </button>
+    </div>
+</form>
