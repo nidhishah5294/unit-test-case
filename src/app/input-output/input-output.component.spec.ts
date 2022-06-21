@@ -49,7 +49,7 @@ describe('InputOutputComponent', () => {
     expect(userListComponent).toBeTruthy();
   });
 
-  it('[input] - should test the @imput changes', async(() => {
+  it('[input] - should test the @input changes', async(() => {
     //two binding feature use [ASync]
     let idDiv = listDebug.query(By.css('#userid')).nativeElement.innerText;
     expect(idDiv).toContain('1');

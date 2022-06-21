@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AfterContentChildComponent } from './after-content-child/after-content-child.component';
+import { AfterContentParentComponent } from './after-content-parent/after-content-parent.component';
 import { DirectTestComponent } from './direct-test/direct-test.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EventTestComponent } from './event-test/event-test.component';
@@ -21,6 +23,8 @@ const routes: Routes = [
   { component: ReactiveFormComponent, path: 'login' },
   { component: TemplateDrivenFormComponent, path: 'email-forgot' },
   { component: LifeCycleHookComponent, path: 'hook' },
+  { component: AfterContentParentComponent, path: 'parent' },
+  { component: AfterContentChildComponent, path: 'child' },
   { pathMatch: 'full', path: '**', redirectTo: 'directive' }//put in last line,bcz it is sequential execution
 
 ];

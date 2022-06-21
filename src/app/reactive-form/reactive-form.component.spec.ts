@@ -59,7 +59,7 @@ describe('ReactiveFormComponent', () => {
     expect(component.loginForm.valid).toBeFalsy();
   })
 
-  it('[for check] should check form is valid or not when [no value is entered]', () => {
+  it('[for check] should check form is valid or not when [value is entered]', () => {
     component.loginForm.controls['useremail'].setValue('abc@gmail.com');
     component.loginForm.controls['userpassword'].setValue('123456');
     expect(component.loginForm.valid).toBeTruthy();

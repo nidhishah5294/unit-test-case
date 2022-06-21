@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EventTestComponent implements OnInit {
   countClicks: number =0;
   constructor() { }
-  addClick(){
+  addClick(val:any){
     this.countClicks++;
   }
   removeClick(){

@@ -57,7 +57,7 @@ describe('ProductListComponent', () => {
     })
   })
   //auto detact response
-  it('should test filter product list (async)', async () => {
+  it('should test filter product list (async)', async () => {//use this always  
     component.searchText = 'egg';
     spyOn(productService, 'filterProductList').withArgs('egg').and.callThrough();
     component.filterProductList();

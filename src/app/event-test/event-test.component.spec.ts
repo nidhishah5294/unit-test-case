@@ -20,7 +20,7 @@ describe('EventTestComponent', () => {
     fixture = TestBed.createComponent(EventTestComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    de = fixture.debugElement;
+    de = fixture.debugElement;//nessacry
   });
 
   it('should create', () => {
@@ -35,4 +35,5 @@ describe('EventTestComponent', () => {
      expect(component.countClicks).toEqual(parseInt(h1.nativeElement.innerText));
 
   })
+  
 });

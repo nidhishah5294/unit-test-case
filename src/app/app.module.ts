@@ -17,6 +17,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { HttpClientModule } from '@angular/common/http';
 import { LifeCycleHookComponent } from './life-cycle-hook/life-cycle-hook.component';
 import { DummyComponent } from './dummy/dummy.component';
+import { AfterContentParentComponent } from './after-content-parent/after-content-parent.component';
+import { AfterContentChildComponent } from './after-content-child/after-content-child.component';
 // import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
@@ -34,6 +36,8 @@ import { DummyComponent } from './dummy/dummy.component';
     TemplateDrivenFormComponent,
     LifeCycleHookComponent,
     DummyComponent,
+    AfterContentParentComponent,
+    AfterContentChildComponent,
     // EmployeeComponent
   ],
   imports: [
